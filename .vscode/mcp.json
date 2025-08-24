@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "add-two-numbers-debug": {
+      "type": "http",
+      "url": "http://localhost:3000/mcp"
+    }
+  }
+}
