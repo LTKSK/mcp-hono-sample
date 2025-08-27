@@ -6,7 +6,10 @@ import { createMcpServer } from "./mcp/server.js";
 const app = new Hono();
 
 app.get("/", (c) => {
-  return c.text("Hello, MCP Server is available at /mcp");
+  return c.json({
+    message: "Hello, MCP Server is available at /mcp",
+    available: true,
+  });
 });
 
 app.all("/mcp", async (c) => {
